@@ -3,8 +3,8 @@ import re
 
 ## SI 206 - W17 - HW3
 ## COMMENT WITH:
-## Your section day/time:
-## Any names of people you worked with on this assignment:
+## Your section day/time: Friday 1-2
+## Any names of people you worked with on this assignment: Margaux Klein
 
 #####################
 
@@ -21,7 +21,7 @@ import re
 ## Write code to define your parse_counted_words function here.
 
 def parse_counted_words(x):
-    match= re.findall(r'([0-9]+)\s(^[\s[0-9]]+)', x)
+    match= re.findall(r'([0-9]+)\s([^a-zA-Z]*\b[a-zA-Z]+\b)', x)
     if match:
         return (match[-1])
     else:
